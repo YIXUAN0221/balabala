@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title {
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            animation: change 2s linear infinite;
+
+        }
+
+        .bottom {
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            bottom: 0;
+            animation: later 2s linear infinite;
+            font-size: 10px;
+        }
+
+
+
+        @keyframes change {
+            0% {
+                color: transparent;
+            }
+
+            100% {
+                color: black;
+            }
+        }
+
+        @keyframes later {
+            0% {
+                color: transparent;
+            }
+
+            40% {
+                color: transparent
+            }
+
+            100% {
+                color: grey;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title"><strong>原神</strong></div>
+    <div class="bottom">抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防受骗上当，适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活。<br>审批文号:国新出审[2020]1407号 ISBN
+        978-7-498-07852-O出版单位:华东师范大学电子音像出版社有限公司<br>
+        著作权人:上海米哈游天命科技有限公司<br>
+        本公司积极履行《网络游戏行业防沉迷自律公约》
+    </div>
+</body>
+
+</html>

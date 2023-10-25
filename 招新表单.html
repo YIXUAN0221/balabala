@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+    <style>
+        form {
+            width: 50%;
+            height: 80%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            box-shadow: 0 0 3px grey inset;
+            overflow-y: auto;
+            line-height: 30px;
+        }
+
+        textarea {
+            box-shadow: 0 0 1px grey inset;
+            resize: none;
+            border: none;
+            width: 80%;
+        }
+
+        .name {
+            border: 1px solid gainsboro;
+            width: 80%;
+        }
+
+        .white {
+            position: sticky;
+            bottom: 0;
+            background-color: white;
+            text-align: center;
+        }
+
+
+        .button {
+            border: none;
+            display: inline;
+            background-color: #007bff;
+            width: 50%;
+            color: white
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <form>
+            <h2> 招新の表单</h2>
+            姓名：<br><input class="name" type="text" name="xingming"><br>
+
+            爱好：<input type="checkbox" disabled>睡觉
+            <input type="checkbox">学前端
+            <input type="checkbox">吃吃吃<br>
+
+            性别：<input type="radio" name="sex">男
+            <input type="radio" name="sex">女
+            <input type="radio" name="sex">武装直升机<br>
+            评论：<br><textarea></textarea><br>
+            <div class="white"><input class="button" type="submit" value="提交"></div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

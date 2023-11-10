@@ -75,6 +75,7 @@
              width: 248px;
              height: 30px;
              margin-top: 10px;
+             outline: none;
              border: 2px solid #f44336;
              border-right: 0;
          }
@@ -221,7 +222,7 @@
              border-radius: 50%;
              border: 2px solid #1dc091;
              text-align: center;
-             line-height: 25px;
+             line-height: 22px;
              font-size: 30px;
              margin-top: 35px;
              margin-bottom: 55px;
@@ -305,7 +306,6 @@
 
          .main4 .head {
              text-align: center;
-
          }
 
          .main4 .head h4 {
@@ -316,28 +316,29 @@
          .main4 .head h6 {
              padding-bottom: 66px;
              color: #26c395;
+
          }
 
          .main4 .body {
-             display: flex;
-             justify-content: center;
              padding-bottom: 100px;
+             position: relative;
+             z-index: 1;
          }
 
          .main4 .body img {
              width: 64px;
              height: 34px;
              position: relative;
+             top: 0px;
              z-index: -1;
-             top: -33px;
          }
 
          .main4 .body>div {
-             position: relative;
              display: flex;
              flex-direction: column;
-             align-items: center;
              justify-content: center;
+             align-items: center;
+             position: relative;
              text-align: center;
              width: 175px;
              height: 105px;
@@ -345,11 +346,18 @@
              margin-bottom: 150px;
              background-color: #f77b72;
              color: white;
+             float: left;
+             margin-right: 15px;
          }
 
-         .main4 .body>div>div:nth-child(1) {
+         .main4 .body>div:nth-child(1) {
+             margin-left: 122px;
+         }
+
+         .main4 .body img {
              position: absolute;
-             transition: transform 1s ease;
+             transition: transform 0.8s ease;
+             z-index: -1;
          }
 
          .main4 .body>div>div:nth-child(2) {
@@ -362,12 +370,12 @@
 
          }
 
-         .main4 .body>div:hover {
+         .main4 .body div:hover {
              background-color: #f44336;
              cursor: pointer;
          }
 
-         .main4 .body>div:hover>div:nth-child(1) {
+         .main4 .body div:hover>img {
              position: absolute;
              transform: translateY(-33px);
              cursor: pointer;
